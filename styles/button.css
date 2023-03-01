@@ -1,0 +1,96 @@
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 1223px;
+  z-index: 5;
+  margin-top: 20px;
+  margin-left: -380px;
+}
+@media screen and (min-width: 1200px) {
+  .dropdown-content {
+    margin-left: -400px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .dropdown-content {
+    margin-left: -420px;
+  }
+}
+
+.tab {
+  float: left;
+  background: #F3F4F5;
+  width: 30%;
+  overflow-x: auto;
+  height: 100vh;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  width: 100%;
+  border: none;
+  padding: 12px 25.125px 12px 105px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+    background: #383355;
+    border-radius: 8px 0px 0px 8px;
+  } */
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background: #383355;
+  border-radius: 8px 0px 0px 8px;
+  color: #FFFFFF;
+  transition: 0.2s ease;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  display: none;
+}
+
+.tabcontent .section-1 {
+  display: flex;
+  color: black !important;
+  gap:100px;
+}
+.section-1 ul { 
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25px;
+}
+
+.section-1 ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  align-items: center;
+  color: #202020;
+  text-decoration: none;
+}
+.descript-link.active { 
+  background: transparent;
+  text-decoration: underline !important;
+  color: #202020 !important;
+}
+#category-content { 
+  display: block;
+}
+.button-catalog { 
+  display: none;
+}

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benedict</title>
+    <!-- Style css connect -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- Button categories css -->
+    <link rel="stylesheet" href="/styles/button.css">
+    <!-- Media query -->
+    <link rel="stylesheet" href="/styles/media.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <!-- <span>Hello Welcome !</span> -->
+    <div class="container">
+       <!-- Header section -->
+       <!-- navbar links section -->
+       <div class="navlinks">
+        <ul>
+            <li><a href="/index.html" class="linkk">О компании</a></li>
+            <li><a href="/pages/benedict.html" class="linkk">Benedict</a></li>
+            <li><a href="/pages/benetex.html" class="linkk">Benetex</a></li>
+            <li><a href="/pages/vid-logotipa.html" class="linkk">Нанесение логотипа</a></li>
+            <li><a href="jascript:void(0)" class="linkk" id="myBtn">Дилерам</a></li>
+            <li><a href="jascript:void(0)" class="linkk" id="my2Btn">Поставщикам</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1gBGuvnNYMybjlfhV9qSATJug81gzpv0T" class="linkk">Cкачать каталоги</a></li>
+        </ul>
+       </div>
+       <!-- header Logo  -->
+       <div class="row">
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+         <ul>
+          <li><a href="#about" class="linkk">О компании</a></li>
+          <li><a href="/pages/benedict.html" class="linkk">Benedict</a></li>
+          <li><a href="/pages/benetex.html" class="linkk">Benetex</a></li>
+          <li><a href="/pages/vid-logotipa.html" class="linkk">Нанесение логотипа</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1gBGuvnNYMybjlfhV9qSATJug81gzpv0T" class="linkk">Cкачать каталоги</a></li>
+         </ul>
+        </div>
+        <div class="col-logo">
+            <a href="/index.html">
+                <img src="/images/Benegifts-logo-2.svg" alt="Main logo img">
+            </a>
+            <button class="openbtn" id="openbtn" onclick="openNav()"><i class="fa-solid fa-bars-progress"></i></button>
+        </div>
+        <div class="col-input">
+            <button type="button" class="category-button" onclick="myFunction()">
+                <i class="fa-solid fa-bars" id="icon1"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <span>Категории товаров</span>
+            </button>
+           <!-- After clicking button happens -->
+           <div id="myDropdown" class="dropdown-content">
+            <div class="drop-container">
+              <div class="tab">
+                <button class="tablinks" onmouseover="openCity(event, 'nabor')">Наборы</button>
+                <button class="tablinks" onmouseover="openCity(event, 'odejda')">Одежда</button>
+                <button class="tablinks" onmouseover="openCity(event, 'izdeliya')">Изделия из Кожи</button>
+                <button class="tablinks" onmouseover="openCity(event, 'upakovka')">Коробки, Упаковка</button>
+                <button class="tablinks" onmouseover="openCity(event, 'termos')">Термосы, кружки, посуда</button>
+                <button class="tablinks" onmouseover="openCity(event, 'sladkie-nabori')">Сладкие наборы</button>
+                <button class="tablinks" onmouseover="openCity(event, 'elektroniki')">Электроника</button>
+                <button class="tablinks" onmouseover="openCity(event, 'ruchki-pish')">Ручки, пиш-е инструменты</button>
+                <button class="tablinks" onmouseover="openCity(event, 'chasi')">Часы</button>
+                <button class="tablinks" onmouseover="openCity(event, 'breloki')">Брелоки</button>
+                <button class="tablinks" onmouseover="openCity(event, 'ejednevniki')">Ежедневники и блокноты</button>
+                <button class="tablinks" onmouseover="openCity(event, 'korporativ-podarki')">Корпоративные подарки</button>
+                <button class="tablinks" onmouseover="openCity(event, 'sumki-ryukzaki')">Сумки, рюкзаки</button>
+                <button class="tablinks" onmouseover="openCity(event, 'tovari-dlya-doma')">Товары для дома и офиса</button>
+                <button class="tablinks" onmouseover="openCity(event, 'otdix-sport')">Отдых, Спорт</button>
+                <button class="tablinks" onmouseover="openCity(event, 'nagradi')">Стеллы, Награды,
+                  Промосупениры</button>
+                <button class="tablinks" onmouseover="openCity(event, 'prazdniki')">Праздники</button>
+                <button class="tablinks" onmouseover="openCity(event, 'zonti')">Зонты</button>
+                <button class="tablinks" onmouseover="openCity(event, 'vip-podarki')">VIP подарки</button>
+                <button class="tablinks" onmouseover="openCity(event, 'rasprodaja')">Распродажа</button>
+                <button class="tablinks" onmouseover="openCity(event, 'jenskiy-aksesuar')">Женские аксессуары</button>
+                <button class="tablinks" onmouseover="openCity(event, 'mujskiy-aksesuar')">Мужские аксессуары</button>
+                <button class="tablinks" onmouseover="openCity(event, 'tovar-avto')">Товары для автомобиля</button>
+                <button class="tablinks" onmouseover="openCity(event, 'narujniy-digital')">Наружная и Digital реклама</button>
+              </div>
+                  <!--  -->
+              <div id="nabor" class="tabcontent">       
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Бизнес наборы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html" id="focusButton">Дорожные наборы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с термокружками</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с аккумуляторами</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с флешками</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с колонками</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с пледами</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с книгами</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с мультитулами</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Винные наборы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для сыра</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для водки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для виски</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Продуктовые наборы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с мёдом</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с вареньем</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с чаем</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с кофе</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для выращивания</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для мужчин</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для женщин</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="odejda" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Футболки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Рубашки поло</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Футболки для промо</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кепки и бейсболки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Панамы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Ветровки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Дождевики</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Куртки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Толстовки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Шарфы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Трикотажные шапки</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Вязаные комплекты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Джемперы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Жилеты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Офисные рубашки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Рабочая одежда</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Фартуки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Халаты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Спортивная одежда</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Детская одежда</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Вязание на заказ</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="izdeliya" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Ежедневники</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Блокноты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Сумки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Портмоне</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Тревел портмоне</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кошельки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Дорожные сумки</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="upakovka" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Коробки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Упаковка</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="termos" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Кружки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Бокалы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Чайные наборы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кофейные наборы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Столовые тарелки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Термокружки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Термосы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Бутылки для воды</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Фляжки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Ланчбоксы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кухонные аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Разделочные доски</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Барные аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Предметы сервировки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Заварочные чайники</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кувшины и графины</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="sladkie-nabori" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Чайные наборы</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="elektroniki" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Флешки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Внешние аккумуляторы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Внешние жёсткие диски </a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Портативная акустика</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наушники</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Компьютерные и мобильные аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Бытовая техника</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Лампы и светильники</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Зарядные устройства</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="ruchki-pish" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Пластиковые ручки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Металлические ручки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Древянные ручки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Карандаши</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Текстовыделители</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Футляры для ручек</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с ручками</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="chasi" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Часы настольные</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Часы миниатюры</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Часы наградные</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Погодные станции, термометры</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Часы наручнве</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="breloki" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Металлические</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Пластиковые</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Брелоки-открывалки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Деревянные</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Деревянные</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="ejednevniki" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Ежедневник калькулятор</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Оригинальные ежедневники</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Блокноты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы с ежедневниками</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Упаковка для ежедневников</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Ежедневники на заказ</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="korporativ-podarki" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Настольные аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Часы и метеостанции</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кошельки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Визитницы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Чехлы для карт</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Ключницы</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Дорожные органайзеры</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Обложки для документов</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Чехлы для планшетов</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Папки, портфели</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарочные книги</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Коллекционные товары</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="sumki-ryukzaki" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Сумки для ноутбука</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Рюкзаки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Сумки для документов</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Сумки для покупок</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Спортивные сумки</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Дорожные сумки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Чемоданы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Несессеры и косметички</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Сумки для пикника</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Чехлы для планшета</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="tovari-dlya-doma" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Офисные игры</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Настольные принадлежности</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Бювары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мебель в офис</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Техника в офис</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Умный офис</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Коллекционные вещи</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Изделия из дерева</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Изделия из металла</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Изделия из кожи</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки руководителю</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кофе&Чай</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Дизайн офиса</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Офис под ключ</a></li>
+                  </ul>
+                </div>
+              </div>
+               <!--  -->
+               <div id="otdix-sport" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для путешествий</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Автомобильные аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Дорожные подушки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для пикников</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Турисчтические принадлежности</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Складные ножи и мультитулы</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Инструменты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Игры и головоломки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Спортивные товары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мячи</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки для дачи</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Пляжный отдых</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="nagradi" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Наградные стелы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Плакетки и панно</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кубки и медали</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- prazdniki -->
+              <div id="prazdniki" class="tabcontent">       
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">День Победы 9 мая</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День электросвязи 17 мая</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День химика</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки для детей</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарок коллеге</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки начальнику</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки на День рождения компании</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки военным</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки морякам</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Эко-подарки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День России 12 июня</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День медика</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День металлурга</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки сисадминам</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День железнодорожника</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">День строителя</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День шахтёра</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День знаний 1 сентября</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День нефтянки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки программистам</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День учителя 5 октября</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки автомобилисту</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День полиции (милиции) 10 ноября</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День банковского работника 2 декабря</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День юриста 3 декабря</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День энергетики 22 декабря</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День авиации 14 февраля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">23 февраля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">8 марта</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">День геолога</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="zonti" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Зонты-трости</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Складные зонты</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Необычные и оригинальные щонты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="vip-podarki" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Аксессуары для дома</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Личные аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Интеллектуальные подарки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Аксессуары для путешествий</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Аксессуары для алкогольных напитков</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Пишущие инстурменты</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки в русском стиле</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Портфели и сумки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Профессиональные подарки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мячи</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Новогодние подарки</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Кофейные наборы</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="rasprodaja" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Текстиль B&C</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Письменные принадлежности</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Посуда</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Отдых и путешествие</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки для женщин</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Подарки для мужчин</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Электроника</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Офис</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Часы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Предметы интерьера</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Наборы для вина</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="jenskiy-aksesuar" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Женские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Женские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Женские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Женские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Женские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Женские аксессуары</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="mujskiy-aksesuar" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Мужские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мужские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мужские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мужские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мужские аксессуары</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Мужские аксессуары</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="tovar-avto" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для автомобиля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для автомобиля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для автомобиля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для автомобиля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для автомобиля</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Товары для автомобиля</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div id="narujniy-digital" class="tabcontent">
+                <div class="section-1">
+                  <ul>
+                    <li><a href="/pages/catalog-tovarov.html">Объёмные буквы</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">Выставочные стенды</a></li>
+                    <li><a href="/pages/catalog-tovarov.html">LED мониторы</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- search bar -->
+            <input type="search" name="searchInput" placeholder="Искать товары" autocomplete="off" class="form-control">
+            <button type="button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="col-number">
+            <a href="/pages/catalog-tovarov.html" class="phone-number">+998 99 003 22 44
+            </a>
+            <a href="#" class="phone-number">+998 99 003 22 44
+            </a>
+        </div>
+       </div>
+
+       <!-- Vertical Tab Links for dileram && Postavshikam -->
+       <div class="dileram-postavshikam">
+        <a href="javascript:void(0)" class="vertical-tab-links" id="myBtnVerticalTovar">Дилерам</a>
+        <a href="javascript:void(0)" class="vertical-tab-links" id="my2BtnVerticalTovar">Поставщикам</a>
+       </div>
+
+         
+      <div class="medium-content" id="medium-content">
+        <a href="/index.html" class="top-links">Главная</a> /
+        <a href="/pages/news-page.html" class="top-links">Новости</a>
+         <br>
+        <a href="#" class="benedict-url">
+            <img src="/images/benedict.png" alt="">
+        </a>
+        <div class="benedict-content">
+            <h2 class="starting-text">Benedict</h2> <br>
+        <p class="starting-content">
+            Новый год встретили, идет активная подготовка к 23 февраля и 8 марта! Атмосфера <br>
+             праздника предвкушение новых выходных дней приносят с собой дополнительную <br> нагрузку на работе и режим “успеть все”.
+        </p> <br>
+        <p class="starting-content">
+            В стрессовых условиях главное сохранять спокойствие! В этом поможет <br> 
+            своевременный перерыв на кофе, аффирмации и увлажнитель воздуха “Pebble”.
+        </p> <br>
+        <p class="starting-content">
+            С наступлением отопительного сезона влажность падает до 30%. Это становится <br>
+             причиной плохого самочувствия, рассеянного внимания и быстрой утомляемости.
+        </p> <br>
+        <p class="starting-content">
+            “Pebble” буквально тот самый глоток свежего воздуха! Увлажнитель создаст <br>
+            комфортные условия для работы в офисе и для спокойного отдыха дома.
+        </p> <br>
+        <p class="starting-content">
+            Экодизайн, встроенная подсветка, компактный размер - совершенный <br>
+            комбо-набор для любого интерьера и помещения. Площадь работы увлажнителя - <br> 
+            до 20 м2.
+        </p> <br>
+        <p class="starting-content">
+            200 штук в наличии <br>
+            “Pebble”- поможет пережить длительные холода без стресса!
+        </p> <br>
+        </div>
+        <h2 class="production-text">
+          Продукция
+        </h2>
+
+        <div class="view-cards">
+          <img src="/images/view-production.png" alt="View production card 1">
+          <img src="/images/view-production.png" alt="View production card 2">
+          <img src="/images/view-production.png" alt="View production card 3">
+        </div>
+        <button type="button" class="view-button">Посмотреть продукцию</button>
+      </div>
+
+        <!-- Заказать звонок section -->
+        <div class="call-section-1" id="call-section">
+          <input type="text" placeholder="Ваше имя" value="" autocomplete="off" required>
+          <input type="number" placeholder="Номер телефона" value="" autocomplete="off" required>
+          <button type="submit" class="send">Заказать звонок</button>
+         </div>
+
+       </div>
+       <!-- popUp form -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+              <p class="form-text">Форма обратной <br> связи
+                для дилеров</p>
+            <span class="close">&times;</span>
+            </div>
+            <input type="text" placeholder="Ваше имя" value="" autocomplete="off" required>
+            <input type="number" placeholder="Номер телефона" value="" autocomplete="off" required>
+            <button type="submit" class="send">Заказать звонок</button>
+        </div>
+      
+      </div>
+
+      <!-- PopUp for postavshikov -->
+      <div id="my2Modal" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <div class="modal-header2">
+              <p class="form-text2">Форма обратной <br> связи
+                для <br> поставщиков</p>
+            <span class="close2">&times;</span>
+            </div>
+            <input type="text2" placeholder="Ваше имя" value="" autocomplete="off" required>
+            <input type="number2" placeholder="Номер телефона" value="" autocomplete="off" required>
+            <button type="submit2" class="send">Заказать звонок</button>
+        </div>
+      
+      </div>
+       <!-- footer section -->
+       <footer id="footer">
+        <div class="content">
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Документы</li>
+              <li><a href="#">Общие условия продажи</a></li>
+              <li><a href="#">Архив оферт</a></li>
+              <li><a href="#">Устав</a></li>
+              <li><a href="#">Свидетельство</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Сервис</li>
+              <li><a href="#">Магазины</a></li>
+              <li><a href="#">Рассрочка в Исламе</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Как начать сотрудничество?</a></li>
+              <li><a href="#">Возвраты</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Каталог товаров</li>
+              <li><a href="#">Электроника для авто</a></li>
+              <li><a href="#">Товары для кормления</a></li>
+              <li><a href="#">Умный дом и безопасность</a></li>
+              <li><a href="#">Садовая техника</a></li>
+              <li><a href="#">Компьютеры и комплектующие</a></li>
+              <li><a href="#">Шины и диски</a></li>
+            </ul>
+            <ul class="box input-box">
+              <li class="link_name">Мы в соц-медиа</li>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+              <li><a href="#">@benegifts_uz</a></li>
+              <li><a href="#">+998 99 003 22 44</a></li>
+              <li><a href="#">+998 99 003 22 44</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="line">
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">2023 © benegifts.uz</span>
+          </div>
+        </div>
+      </footer>
+      <!-- slider code js (connect) -->
+      <script src="/scripts/carousel.js"></script>
+      <!-- Button categories -->
+      <script src="/scripts/benedict.js"></script>
+      <!-- toggle Bars -->
+      <script src="/scripts/toggle-menu.js"></script>
+      <!-- Modal opening -->
+      <script>
+        // Modall
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("my2Modal")
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("my2Btn");
+
+var btnVertical = document.getElementById("myBtnVerticalTovar");
+var btn2Vertical = document.getElementById("my2BtnVerticalTovar");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+// When the user clicks the button, open the modal  (2)
+btnVertical.onclick = function() {
+  modal.style.display = "block";
+}
+btn2Vertical.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+      </script>
+</body>
+</html>
